@@ -1,4 +1,8 @@
+var userName,postHeading,postContent;
+
+
 // Get the modal
+
 var modal = document.getElementById("myModal");
 var signInmodal = document.getElementById("signInModal")
 
@@ -42,3 +46,16 @@ window.onclick = function(event) {
   } 
 
 }
+
+$(document).ready(function(){
+  userName = localStorage.getItem("userName");
+  postHeading = localStorage.getItem("postHeading");
+  postContent = localStorage.getItem("postContent");
+  var uName = document.getElementById("post-user");
+  var postTitle = document.getElementById("post-heading");
+  var postContents = document.getElementById("post-content");
+  uName.innerText = userName;
+  postTitle.innerText =  postHeading;
+  postContents.innerText = postContent;
+});
+

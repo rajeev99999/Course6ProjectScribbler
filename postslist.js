@@ -51,7 +51,6 @@ window.onclick = function(event) {
 function deleteCardYes(){
 
 if(target !== undefined && target !== null){
-    //target.hide('slow', function(){ $target.remove(); });
     target.style.display  = "none";
     deletePostModal.style.display="none";
 }
@@ -70,6 +69,14 @@ $(document).ready(function(){
        deletePostModal.style.display = "block";
        
      })
-  
+     $('.ellipsis').click(function(){
+      target = $(this).parents()[3];
+      localStorage.setItem("userName",$(this).parents()[2].children[0].innerText);
+      localStorage.setItem("postHeading",$(this).parents()[2].children[1].children[0]. innerText);
+      localStorage.setItem("postContent",$(this).parents()[2].children[1].children[1]. innerText);
+      window.location.href="post.html";
+     
+   })
+
   });
 

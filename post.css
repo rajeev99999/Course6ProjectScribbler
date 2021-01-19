@@ -128,3 +128,37 @@
     border-bottom: 1px solid silver;
     font-family: 'Lato', sans-serif;
   }
+
+  .header-ofPost{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+
+  .edit-btn{
+    float: right;
+    background: rgb(240, 52, 83);
+    color: white;
+    text-align: center;
+    font-size:15px;
+    padding: 10px 20px 10px 25px;
+    border: white;
+    margin: 5px 30px 5px 5px;
+  }
+
+  .content-post{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .userPoststyle{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-left: 20px;
+  }
