@@ -59,9 +59,22 @@
           <h3 id="post-heading" class="header-ofPost"></h3>
           <div>
               <span id="post-user" class="userPoststyle"></span>
-              <button class="edit-btn">Edit&nbsp;<i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+              <button id="btn" class="edit-btn" onclick="editDetails()">Edit&nbsp;<i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button>
+              <button id="btnSave" class="edit-btn" onclick="saveDetails()" hidden=true >Save&nbsp;<i class="fa fa-floppy-o" aria-hidden="true" ></i></button>
+          </div>
+          <p id="post-content" class="content-post"></p><br>
+          <div>
+              <button id="likebtn" class="like-btn" onclick="likePost()" ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Like</button>
+              <button id="likedbtn" class="like-btn" hidden=true ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Liked</button>
 
           </div>
-          <p id="post-content" class="content-post"></p>
+          <span id="subs-like-text" >Be the first one to like !</span>
+          <span id="likes" hidden=true>1 person likes this!</span>
+          <span id="likesMore" hidden=true><span id="noOfLikes" ></span>people likes this!</span><br><br>
+          <textarea class ="commentBox" id="box" cols="80" rows="5" placeholder="Leave a comment..."></textarea><br>
+          <button id="likedbtn" class="like-btn" onclick="comment()" >Comment</button>
+          <h4 id="allPosts">All Comments</h4>
+          <div id="comment-box"></div>
+
 </body>
 </html>
