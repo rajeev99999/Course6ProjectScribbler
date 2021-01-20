@@ -1,80 +1,145 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Post</title>
-    <link rel="stylesheet" href="/post.css">
+    <link rel="stylesheet" href="/post.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="headerCls">
-        <span id="logo">Scribbler</span>
-        <div  class="buttonHeader-right">
-            <button id="signUp" class="btnCls" onclick="signUp()">Sign Up</button>
-            <button id="signIn" class="btnCls" onclick="signIn()"> Sign In</button>
-        </div>
-        <br>
-        <p id="sub-head">Explore, Imagine, Create</p>
+      <span id="logo">Scribbler</span>
+      <div class="buttonHeader-right">
+        <button id="signUp" class="btnCls" onclick="signUp()">Sign Up</button>
+        <button id="signIn" class="btnCls" onclick="signIn()">Sign In</button>
+      </div>
+      <br />
+      <p id="sub-head">Explore, Imagine, Create</p>
+    </header>
 
-        </header>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span id="closeSignUp" class="close">&times;</span>
+        <span class="signHead">Get Started</span>
+        <form action="">
+          <label for="nameofuser" class="fontForText">Name</label>
+          <input
+            type="text"
+            name=""
+            id="nameofuser"
+            placeholder="Enter your name"
+            required
+          /><br />
+          <label for="username" class="fontForText">Username</label>
+          <input
+            type="text"
+            name=""
+            id="username"
+            placeholder="Enter your username"
+            required
+          /><br />
+          <label for="password" class="fontForText">Password</label>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Enter your password"
+            required
+          /><br />
+          <label for="confrmpwd" class="fontForText">Confirm Password</label>
+          <input
+            type="password"
+            name=""
+            id=""
+            placeholder="Re-enter your password"
+            required
+          /><br />
+          <button class="submit-btn">SignUp</button>
+        </form>
+      </div>
+    </div>
 
-        <div id="myModal" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span id="closeSignUp" class="close">&times;</span>
-              <span class="signHead">Get Started</span>
-              <form action="">
-                  <label for="nameofuser" class="fontForText">Name</label>
-                  <input type="text" name="" id="nameofuser" placeholder="Enter your name" required><br>
-                  <label for="username" class="fontForText">Username</label>
-                  <input type="text" name="" id="username" placeholder="Enter your username" required><br>
-                  <label for="password" class="fontForText">Password</label>
-                  <input type="password" name="" id="password" placeholder="Enter your password" required><br>
-                  <label for="confrmpwd" class="fontForText">Confirm Password</label>
-                  <input type="password" name="" id="" placeholder="Re-enter your password" required><br>
-                  <button class="submit-btn">SignUp</button>
-              </form>
-            </div>
-          
-          </div>
-    
-          <div id="signInModal" class="modal">
-              <div class="modal-content">
-              <span id ="closeSignIn" class="close">&times;</span>
-              <span class="signHead"> Welcome back!</span>
-              <form action="">
-                  <label for="username" class="fontForText">Username</label>
-                  <input type="text" name="" id="username" placeholder="Enter your username" required>
-                  <label for="passord" class="fontForText">Password</label>
-                  <input type="password" name="" id="password" placeholder="Enter your password" required>
-                  <button class="submit-btn">Sign In</button><br>
-                  <span class="fontForText">Not a member? <a id="signUpCursor" class="fontForText" onclick="signUpFromSignIn()">Sign Up</a></span>
-              </form>
-              </div>
-          </div>
-          <script src="/post.js"></script>
-          <h3 id="post-heading" class="header-ofPost"></h3>
-          <div>
-              <span id="post-user" class="userPoststyle"></span>
-              <button id="btn" class="edit-btn" onclick="editDetails()">Edit&nbsp;<i class="fa fa-pencil-square-o" aria-hidden="true" ></i></button>
-              <button id="btnSave" class="edit-btn" onclick="saveDetails()" hidden=true >Save&nbsp;<i class="fa fa-floppy-o" aria-hidden="true" ></i></button>
-          </div>
-          <p id="post-content" class="content-post"></p><br>
-          <div>
-              <button id="likebtn" class="like-btn" onclick="likePost()" ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Like</button>
-              <button id="likedbtn" class="like-btn" hidden=true ><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Liked</button>
-
-          </div>
-          <span id="subs-like-text" >Be the first one to like !</span>
-          <span id="likes" hidden=true>1 person likes this!</span>
-          <span id="likesMore" hidden=true><span id="noOfLikes" ></span>people likes this!</span><br><br>
-          <textarea class ="commentBox" id="box" cols="80" rows="5" placeholder="Leave a comment..."></textarea><br>
-          <button id="likedbtn" class="like-btn" onclick="comment()" >Comment</button>
-          <h4 id="allPosts">All Comments</h4>
-          <div id="comment-box"></div>
-
-</body>
+    <div id="signInModal" class="modal">
+      <div class="modal-content">
+        <span id="closeSignIn" class="close">&times;</span>
+        <span class="signHead"> Welcome back!</span>
+        <form action="">
+          <label for="username" class="fontForText">Username</label>
+          <input
+            type="text"
+            name=""
+            id="username"
+            placeholder="Enter your username"
+            required
+          />
+          <label for="passord" class="fontForText">Password</label>
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button class="submit-btn">Sign In</button><br />
+          <span class="fontForText"
+            >Not a member?
+            <a
+              id="signUpCursor"
+              class="fontForText"
+              onclick="signUpFromSignIn()"
+              >Sign Up</a
+            ></span
+          >
+        </form>
+      </div>
+    </div>
+    <script src="/post.js"></script>
+    <h3 id="post-heading" class="header-ofPost"></h3>
+    <div>
+      <span id="post-user" class="userPoststyle"></span>
+      <button id="btn" class="edit-btn" onclick="editDetails()">
+        Edit&nbsp;<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      <button
+        id="btnSave"
+        class="edit-btn"
+        onclick="saveDetails()"
+        hidden="true"
+      >
+        Save&nbsp;<i class="fa fa-floppy-o" aria-hidden="true"></i>
+      </button>
+    </div>
+    <p id="post-content" class="content-post"></p>
+    <br />
+    <div>
+      <button id="likebtn" class="like-btn" onclick="likePost()">
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Like
+      </button>
+      <button id="likedbtn" class="like-btn" hidden="true">
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Liked
+      </button>
+    </div>
+    <span id="subs-like-text">Be the first one to like !</span>
+    <span id="likes" hidden="true">1 person likes this!</span>
+    <span id="likesMore" hidden="true"
+      ><span id="noOfLikes"></span>people likes this!</span
+    ><br /><br />
+    <textarea
+      class="commentBox"
+      id="box"
+      cols="80"
+      rows="5"
+      placeholder="Leave a comment..."
+    ></textarea
+    ><br />
+    <button id="likedbtn" class="like-btn" onclick="comment()">Comment</button>
+    <h4 id="allPosts">All Comments</h4>
+    <div id="comment-box"></div>
+  </body>
 </html>

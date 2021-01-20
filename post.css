@@ -1,223 +1,220 @@
-.headerCls{
-    width: 100%;
+.headerCls {
+  width: 100%;
 }
 
-#logo{
-    font-family: 'Montez', cursive; 
-    font-size: 40px;
-    color: blue;
+#logo {
+  font-family: "Montez", cursive;
+  font-size: 40px;
+  color: blue;
 }
-.buttonHeader-right{
-    float: right;
-
-}
-
-.btnCls{
-    background: blue;
-    color: white;
-    text-align: center;
-    padding: 10px 15px 10px 15px;
-    border: white;
-    margin: 5px 5px 5px 5px;
+.buttonHeader-right {
+  float: right;
 }
 
-#sub-head{
-    padding-top: 0px;
-    margin-top: 0px;;
-    padding-left: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Ubuntu Mono', monospace;
+.btnCls {
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border: white;
+  margin: 5px 5px 5px 5px;
+}
+
+#sub-head {
+  padding-top: 0px;
+  margin-top: 0px;
+  padding-left: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10%; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal-content-post {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: rgb(59, 165, 59);
+  padding: 2%;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  border: 0px;
+}
+
+input {
+  padding: 2%;
+  background-color: rgb(238, 232, 232);
+  border: 0px;
+}
+
+.fontForText {
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+  color: black;
+  padding-bottom: 2%;
+  font-family: "Lato", sans-serif;
+}
+
+.signHead {
+  font-size: 20px;
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  display: flex;
+  color: black;
+  border-bottom: 1px solid silver;
+  font-family: "Lato", sans-serif;
+}
+
+.header-ofPost {
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: sans-serif;
+}
+
+.edit-btn {
+  float: right;
+  background: rgb(240, 52, 83);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 20px 10px 25px;
+  border: white;
+  margin: 5px 30px 5px 5px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.8s;
+}
+
+.content-post {
+  font-family: sans-serif;
+  display: flex;
+  padding-left: 30px;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.userPoststyle {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 30px;
+}
+
+.like-btn {
+  background: rgb(240, 52, 83);
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 25px 10px 25px;
+  border: white;
+  margin: 10px 30px 10px 30px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.8s;
+}
+
+#subs-like-text {
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-left: 30px;
+}
+
+#likes {
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+#allPosts {
+  padding-left: 30px;
+  font-family: sans-serif;
+}
+
+#likesMore {
+  font-size: 15px;
+  padding-left: 30px;
+}
+.commentBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-left: 30px;
+  resize: none;
+}
+
+.borderBox {
+  border: 10px solid silver;
+  padding: 10px;
+  word-break: break-word;
+  width: 35%;
+  margin-left: 30px;
+}
+
+@media (max-width: 400px) {
   .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height: auto;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .modal-content-post {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
     width: 60%;
-    height: auto;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-  }
-
-  .submit-btn {
-    background-color: rgb(59, 165, 59);
-    padding: 2%;
-    font-size: 15px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    border: 0px;
-  }
-
-  input{
-    padding: 2%;
-    background-color: rgb(238, 232, 232);
-    border: 0px;
-}
-
-.fontForText{
-    font-size: 100%;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    /* font-weight: bold; */
-    color: black;
-    padding-bottom: 2%;
-    font-family: 'Lato', sans-serif;
-}
-
-.signHead{
-    font-size: 20px;
-    /* font-weight: bold; */
-    margin-bottom: 5px;
-    padding-bottom: 15px;
-    display: flex;
-    color: black;
-    border-bottom: 1px solid silver;
-    font-family: 'Lato', sans-serif;
-  }
-
-  .header-ofPost{
-    font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: sans-serif;
-  }
-
-  .edit-btn{
-    float: right;
-    background: rgb(240, 52, 83);
-    color: white;
-    text-align: center;
-    font-size:15px;
-    padding: 10px 20px 10px 25px;
-    border: white;
-    margin: 5px 30px 5px 5px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
-    transition: 0.8s;
-  }
-
-  .content-post{
-    font-family: sans-serif;
-    display: flex;
-    padding-left: 30px;
-    flex-direction: row;
-    justify-content: left;
-  }
-
-  .userPoststyle{
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-left: 30px;
-  }
-
-  .like-btn{
- 
-    background:rgb(240, 52, 83);
-    color: white;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px 25px 10px 25px;
-    border: white;
-    margin: 10px 30px 10px 30px;
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
-    transition: 0.8s;
-  }
-
-  #subs-like-text{
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    padding-left: 30px;
-  }
-
-  #likes{
-    font-size: 15px;
-    padding-left: 30px;
-  }
-
-  #allPosts{
-    padding-left: 30px;
-    font-family: sans-serif;
-  }
-
-  #likesMore{
-    font-size: 15px;
-    padding-left: 30px;
-  }
-  .commentBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    margin-left: 30px;
-    resize: none;
-  }
-
-  .borderBox {
-    border: 10px solid silver;
-    padding: 10px;
-    word-break: break-word;
-    width: 35%;
-    margin-left: 30px;
-}
-
-
-@media(max-width : 400px){
-  .modal-content{
-      width: 60%;
   }
 }

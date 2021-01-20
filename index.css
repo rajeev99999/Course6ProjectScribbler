@@ -1,59 +1,58 @@
 body {
-    background-image: url("./images/background.jpg") ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-
-html{
-    height:100%;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.btnCls{
-    background: blue;
-    color: white;
-    text-align: center;
-    padding: 10px 15px 10px 15px;
-    border: white;
-    margin: 5px 5px 5px 5px;
+
+html {
+  height: 100%;
+}
+.btnCls {
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+  border: white;
+  margin: 5px 5px 5px 5px;
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
-    top: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
 }
-.btnCenter{
-    background: rgb(187, 156, 55);
-    color: black;
-    padding: 10px 30px 10px 30px;
-    border: 1px solid rgb(180, 180, 180);
-    font-size: 15px;
-    margin: 5px 5px 5px 5px;
+.btnCenter {
+  background: rgb(187, 156, 55);
+  color: black;
+  padding: 10px 30px 10px 30px;
+  border: 1px solid rgb(180, 180, 180);
+  font-size: 15px;
+  margin: 5px 5px 5px 5px;
 }
 
-.headerCls{
-    width: 100%;
+.headerCls {
+  width: 100%;
 }
 
 .headerCls span {
-    float: left;
+  float: left;
 }
 
-.buttonHeader-right{
-    float: right;
-
+.buttonHeader-right {
+  float: right;
 }
 
-#logo{
-    font-family: 'Montez', cursive; 
-    font-size: 40px;
-    color: blue;
+#logo {
+  font-family: "Montez", cursive;
+  font-size: 40px;
+  color: blue;
 }
 
-p{
-    padding-top: 20px;
-    padding-left: 5px;
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Ubuntu Mono', monospace;
+p {
+  padding-top: 20px;
+  padding-left: 5px;
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu Mono", monospace;
 }

@@ -1,149 +1,148 @@
-.headercls{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+.headercls {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: absolute; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 10%; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 25%;
-    height: auto;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .modal-content-post {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 60%;
-    height: auto;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width:100%;
-  }
-
-  .submit-btn {
-    background-color: rgb(59, 165, 59);
-    padding: 2%;
-    font-size: 15px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    border: 0px;
-  }
-
-  .submit-btn-post {
-    background-color: rgb(59, 165, 59);
-    padding: 1%;
-    font-size: 15px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    border: 0px;
-    width: 15%;
-  }
-  input{
-      padding: 2%;
-      background-color: rgb(238, 232, 232);
-      border: 0px;
-  }
-
-  #contentarea{
-    padding: 2%;
-    background-color: rgb(238, 232, 232);
-    border: 0px;
-  }
-
-  textarea{
-    resize: none;
-    padding: 2%;
-    background-color: rgb(238, 232, 232);
-    border: 0px;
-  }
-
-  .fontForText{
-      font-size: 100%;
-      margin-top: 10px;
-      margin-bottom: 5px;
-      /* font-weight: bold; */
-      color: black;
-      padding-bottom: 2%;
-      font-family: 'Lato', sans-serif;
-  }
-
-  .fontForPost{
-    font-size: 100%;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    /* font-weight: bold; */
-    color: black;
-    padding-bottom: 2%;
-    font-family: 'Lato', sans-serif;
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 10%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-  .signHead{
-    font-size: 20px;
-    /* font-weight: bold; */
-    margin-bottom: 5px;
-    padding-bottom: 15px;
-    display: flex;
-    color: black;
-    border-bottom: 1px solid silver;
-    font-family: 'Lato', sans-serif;
-  }
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.modal-content-post {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  height: auto;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
 
-#signUpCursor{
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-btn {
+  background-color: rgb(59, 165, 59);
+  padding: 2%;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  border: 0px;
+}
+
+.submit-btn-post {
+  background-color: rgb(59, 165, 59);
+  padding: 1%;
+  font-size: 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  border: 0px;
+  width: 15%;
+}
+input {
+  padding: 2%;
+  background-color: rgb(238, 232, 232);
+  border: 0px;
+}
+
+#contentarea {
+  padding: 2%;
+  background-color: rgb(238, 232, 232);
+  border: 0px;
+}
+
+textarea {
+  resize: none;
+  padding: 2%;
+  background-color: rgb(238, 232, 232);
+  border: 0px;
+}
+
+.fontForText {
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  /* font-weight: bold; */
+  color: black;
+  padding-bottom: 2%;
+  font-family: "Lato", sans-serif;
+}
+
+.fontForPost {
+  font-size: 100%;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  /* font-weight: bold; */
+  color: black;
+  padding-bottom: 2%;
+  font-family: "Lato", sans-serif;
+}
+
+.signHead {
+  font-size: 20px;
+  /* font-weight: bold; */
+  margin-bottom: 5px;
+  padding-bottom: 15px;
+  display: flex;
+  color: black;
+  border-bottom: 1px solid silver;
+  font-family: "Lato", sans-serif;
+}
+
+#signUpCursor {
   cursor: pointer;
   color: blue;
   font-weight: bolder;
 }
 
-@media(max-width : 400px){
-  .modal-content{
-      width: 60%;
+@media (max-width: 400px) {
+  .modal-content {
+    width: 60%;
   }
 }
